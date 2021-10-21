@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Univers";
+    font-weight: normal;
+    src: url(./univers/Univers-light-normal.ttf);
+}
+@font-face {
+    font-family: "Univers";
+    font-weight: bold;
+    src: url(./univers/UniversBlack.ttf);
+}
+@font-face {
+    font-family: "Univers";
+    font-weight: normal;
+    src: url(./univers/UniversLTStd.otf);
+}
+@font-face {
+    font-family: "Univers";
+    font-weight: bolder;
+    src: url(./univers/UniversLTStd-Bold.otf);
+}
+
+
+
+
+
+
+body{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    margin: calc(50vh - 300px) auto;
+    height: 600px;
+    width: 1000px;
+}
+
+
+
+
+#panigaleLine{
+    stroke-dasharray: 1437.9351806640625;
+    stroke-dashoffset:  1437.9351806640625;
+    animation: amongus 4s infinite reverse;
+    stroke: #ffffff;
+}
+@keyframes amongus{
+    0% {
+        stroke-dashoffset:  0;
+    }
+    100% {
+        stroke-dashoffset:  1437.9351806640625;
+    }
+}
+
+.textContainer{
+    display: block;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 4em;
+    text-align: center;
+    margin-top: 1em;
+    color: red;
+}
+
+b, .-bold{
+    font-family: "Univers", sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+.slant {
+    -moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(5deg, 0deg);
+    -webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(5deg, 0deg);
+    -o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(5deg, 0deg);
+    -ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(5deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(0px, 0px) skew(5deg, 0deg);
+}
