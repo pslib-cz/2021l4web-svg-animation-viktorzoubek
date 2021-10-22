@@ -40,35 +40,53 @@ body{
 
 
 #panigaleLine{
-    stroke-dasharray: 1437.9351806640625;
-    stroke-dashoffset:  1437.9351806640625;
-    animation: amongus 4s infinite reverse;
+    animation: lineanimate 2s ease infinite;
     stroke: #ffffff;
 }
-@keyframes amongus{
+@keyframes lineanimate{
     0% {
+        stroke-dasharray: 1440;
+        stroke-dashoffset:  1440;
+    }
+    30%{
+        stroke-dasharray: 1440;
         stroke-dashoffset:  0;
     }
-    100% {
-        stroke-dashoffset:  1437.9351806640625;
+    70%{
+        stroke-dasharray: 1440;
+        stroke-dashoffset:  0;
+    }
+    100%{
+        stroke-dasharray:  0 1440;
+        stroke-dashoffset:  -1440;
     }
 }
 
+
 .textContainer{
-    display: block;
-    font-family: "Helvetica", sans-serif;
-    font-weight: 300;
-    font-style: italic;
     font-size: 4em;
     text-align: center;
     margin-top: 1em;
-    color: red;
+    font-style: italic;
+}
+.textContainer>*{
+    display: inline-block;
 }
 
-b, .-bold{
+.ducati{
     font-family: "Univers", sans-serif;
     font-weight: bold;
     color: white;
+    height: 75px;
+}
+
+
+.corse{
+    font-family: "Helvetica", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: red;
+    height: 75px;
 }
 
 
