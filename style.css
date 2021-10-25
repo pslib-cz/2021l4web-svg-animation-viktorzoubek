@@ -40,19 +40,27 @@ body{
 
 
 #panigaleLine{
-    animation: lineanimate 2s ease infinite;
-    stroke: #ffffff;
+    animation: lineanimate 2400ms ease infinite;
+    stroke: #008C45;
+}
+#panigaleLine2{
+    animation: lineanimate 2400ms ease infinite;
+    stroke: #F4F5F0;
+}
+#panigaleLine3{
+    animation: lineanimate 2400ms ease infinite;
+    stroke: #CD212A;
 }
 @keyframes lineanimate{
     0% {
         stroke-dasharray: 1440;
         stroke-dashoffset:  1440;
     }
-    30%{
+    40%{
         stroke-dasharray: 1440;
         stroke-dashoffset:  0;
     }
-    70%{
+    60%{
         stroke-dasharray: 1440;
         stroke-dashoffset:  0;
     }
@@ -66,8 +74,10 @@ body{
 .textContainer{
     font-size: 4em;
     text-align: center;
-    margin-top: 1em;
+    margin: 1em auto;
     font-style: italic;
+    display: flex;
+    justify-content: center;
 }
 .textContainer>*{
     display: inline-block;
@@ -76,17 +86,29 @@ body{
 .ducati{
     font-family: "Univers", sans-serif;
     font-weight: bold;
-    color: white;
-    height: 75px;
+    color: black;
+    z-index: 1;
+    background-color: black;
+    transition: 800ms ease-in-out;
 }
-
+.ducati.-shown{
+    color: white;
+}
 
 .corse{
     font-family: "Helvetica", sans-serif;
     font-weight: 300;
-    text-align: center;
     color: red;
-    height: 75px;
+    z-index: -1;
+    line-height: 1.35em;
+    transition: 800ms ease-in-out;
+}
+
+.-collapsed .ducati{
+    transform: translateX(125px);
+}
+.-collapsed .corse{
+    transform: translateX(-100px);
 }
 
 
