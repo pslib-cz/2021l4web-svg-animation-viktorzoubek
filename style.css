@@ -35,6 +35,9 @@ body{
     height: 600px;
     width: 1000px;
 }
+.graphicContainer{
+    height: 300px;
+}
 
 
 
@@ -44,11 +47,11 @@ body{
     stroke: #008C45;
 }
 #panigaleLine2{
-    animation: lineanimate 2400ms ease infinite;
+    animation: lineanimate 2400ms ease infinite 40ms;
     stroke: #F4F5F0;
 }
 #panigaleLine3{
-    animation: lineanimate 2400ms ease infinite;
+    animation: lineanimate 2400ms ease infinite 80ms;
     stroke: #CD212A;
 }
 @keyframes lineanimate{
@@ -74,7 +77,7 @@ body{
 .textContainer{
     font-size: 4em;
     text-align: center;
-    margin: 1em auto;
+    margin: 0.2em auto;
     font-style: italic;
     display: flex;
     justify-content: center;
